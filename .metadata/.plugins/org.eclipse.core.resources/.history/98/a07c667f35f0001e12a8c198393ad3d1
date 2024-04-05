@@ -1,0 +1,23 @@
+package my_firstJava;
+
+import org.openqa.selenium.devtools.v120.page.Page.GetAppIdResponse;
+
+public class swap_number{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 23;
+		int b = 33;
+		int c;
+		
+		c = a;
+		a = b;
+		b = c;
+		
+		
+	}
+//	public GetAppIdResponse() {
+		
+	}
+
+

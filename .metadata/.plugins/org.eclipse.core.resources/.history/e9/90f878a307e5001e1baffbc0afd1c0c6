@@ -1,0 +1,25 @@
+package my_firstJava;
+
+public class staticVar {
+	String name;//= new String();
+	String address;//= new String();
+	static String city;// = new String();
+
+	staticVar(String name,String address,String city){
+		this.name = name;
+		this.address = address;
+		this.city = city;
+		
+	}
+	public void getAddress() {
+		System.out.println(address);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		staticVar st= new staticVar("sai","marthanahalli","Banglore");
+		staticVar st1= new staticVar("ravi","hebbal","Banglore");
+		st.getAddress();
+		st1.getAddress();
+	}
+
+}

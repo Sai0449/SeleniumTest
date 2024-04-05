@@ -1,0 +1,27 @@
+package Strems;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LiveDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		//click on the column
+		//capture all the web elements into list
+		//capture all the element in sorted
+		//Sort theoriginal list
+		//compare original list with the sorted list
+	driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");	
+	driver.findElement(By.xpath("//tr/th[1]")).click();
+	List<WebElement> elementList = driver.findElements(By.xpath("//tr/td[1]"));
+	elementList.stream().sorted().forEach(s->System.out.println(s));
+
+	}
+
+}

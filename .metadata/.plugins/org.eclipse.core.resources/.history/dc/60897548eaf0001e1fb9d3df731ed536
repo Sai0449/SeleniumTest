@@ -1,0 +1,30 @@
+package Strems;
+
+import java.awt.Window;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MultipleWindows {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/angularpractice/");
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		Set<String> wd = driver.getWindowHandles();
+		Iterator<String> it = wd.iterator();
+		String parentwd = it.next();
+		String childwd = it.next();
+		driver.switchTo().window(childwd);
+		driver.get("https://rahulshettyacademy.com/");
+		String mytext = driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']")).get(2).getText();
+		driver.switchTo().window(parentwd);
+		driver.findElement(By.name("name")).sendKeys(mytext);
+	}
+
+}

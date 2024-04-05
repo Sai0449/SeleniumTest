@@ -1,0 +1,15 @@
+package my_firstJava;
+
+public class Super_child extends super_parent{
+
+	String name = "Capgemini";
+	public void getStringData() {
+		System.out.println(name);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Super_child sc = new Super_child();
+		sc.getStringData();
+	}
+
+}

@@ -1,0 +1,8 @@
+package my_firstJava;
+
+public class super_parent {
+	String name = "Sai";
+	public void getdetails() {
+		System.out.println("parent details");
+	}
+}

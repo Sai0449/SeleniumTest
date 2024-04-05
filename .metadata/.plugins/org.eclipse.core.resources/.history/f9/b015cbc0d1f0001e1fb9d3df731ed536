@@ -1,0 +1,13 @@
+package demopack;
+
+public class ReverseaString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "kumar";
+		StringBuilder stringbuild = new StringBuilder();
+		StringBuilder reversename = stringbuild.reverse();
+		System.out.println(reversename);
+	}
+
+}

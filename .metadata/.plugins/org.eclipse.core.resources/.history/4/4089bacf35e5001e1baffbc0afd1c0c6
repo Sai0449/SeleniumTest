@@ -1,0 +1,14 @@
+package my_firstJava;
+
+public class stringAsset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String data = "my name is john";
+		String[] data1 = data.split(" ");
+		for(String a : data1) {
+			System.out.println(a);
+		}
+	}
+
+}

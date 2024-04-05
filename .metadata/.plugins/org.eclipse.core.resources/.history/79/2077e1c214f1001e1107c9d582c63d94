@@ -1,0 +1,10 @@
+package test;
+
+import org.testng.annotations.Test;
+
+public class BasicTest2 {
+	@Test
+	public void homeloan() {
+		System.out.println("my home loan");
+	}
+}

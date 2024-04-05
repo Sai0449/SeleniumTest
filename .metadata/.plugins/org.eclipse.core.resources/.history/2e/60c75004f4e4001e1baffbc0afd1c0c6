@@ -1,0 +1,11 @@
+package my_firstJava;
+
+public class Date {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Date 
+		System.out.println(d.toString());
+	}
+
+}
